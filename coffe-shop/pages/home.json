@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "heading": "Drink Healthy <br> and Natural Coffee",
+    "subtext": "At Anu's House of Coffee ,we only brew the freshest coffee from all around the world. We also serve pastries such as cupcakes and brownies",
+    "bg_img": "/images/barista.jpeg"
+  },
+  "about": {
+    "heading": "Welcome to Anu's Coffee House",
+    "subtext": "Welcome to our house of coffee! We hope you enjoy our broad selection of premium coffee from all over the world",
+    "bg_img": "/images/barista-2.jpeg",
+    "images": [
+      { "image": "/images/coffee.jpeg", "caption": "Coffee" },
+      { "image": "/images/tea.jpeg", "caption": "Tea" },
+      { "image": "/images/cupcake.jpeg", "caption": "Pastries" }
+    ]
+  }
+}

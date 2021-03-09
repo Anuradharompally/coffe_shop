@@ -1,0 +1,9 @@
+{
+  "title": "Anu's Coffee House",
+  "description": "Welcome to our house of coffee! We hope you enjoy our broad selection offee from all over the world",
+  "hours": [
+    { "day": "Mon-Fri", "time": "6AM-10PM" },
+    { "day": "Saturday", "time": "7AM-9PM" },
+    { "day": "Sunday", "time": "7AM-4PM" }
+  ]
+}

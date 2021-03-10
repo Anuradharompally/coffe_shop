@@ -13,5 +13,35 @@
       { "image": "/images/tea.jpeg", "caption": "Tea" },
       { "image": "/images/cupcake.jpeg", "caption": "Pastries" }
     ]
+  },
+  "team": {
+    "subheader": "Team",
+    "header": "Meet the Team",
+    "img_background": "/images/background_cafe.jpeg",
+    "members": [
+      {
+        "name": "Anu",
+        "image": "/images/person_1.jpeg",
+        "quote": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        "position": "owner"
+      },
+      {
+        "name": "Abhi",
+        "image": "/images/person_2.jpeg",
+        "quote": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        "position": "co-owner"
+      },
+      {
+        "name": "jhanu",
+        "image": "/images/person_3.jpeg",
+        "quote": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        "position": "co-owner"
+      }
+    ]
+  },
+  "order": {
+    "subheader": "Order",
+    "header": "Place an Order",
+    "img_background": "/images/barista_3.jpeg"
   }
 }

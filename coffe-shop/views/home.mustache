@@ -12,7 +12,7 @@
       	<div class="overlay"></div>
         <div class="container-fluid p-0">
           <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
-          	<div class="one-third order-md-last img js-fullheight" style="background-image:url({{page.hero.bg_img}});">
+          	<div class="one-third order-md-last img js-fullheight" style="background-image:url({{{cdn}}}{{page.hero.bg_img}});">
           		<div class="overlay"></div>
           	</div>
 	          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -33,7 +33,7 @@
 		<section class="ftco-section ftco-wrap-about ftco-no-pb ftco-no-pt">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-sm-5 img img-2 d-flex align-items-center justify-content-center justify-content-md-end" style="background-image: url({{page.about.bg_img}}); position: relative"></div>
+					<div class="col-sm-5 img img-2 d-flex align-items-center justify-content-center justify-content-md-end" style="background-image: url({{{cdn}}}{{page.about.bg_img}}); position: relative"></div>
 					<div class="col-sm-7 wrap-about py-5 ftco-animate">
 	          <div class="heading-section mt-5 mb-4">
 	          	<div class="pl-lg-5 ml-md-5">
@@ -77,44 +77,44 @@
         		<div class="heading-menu text-center ftco-animate">
         			<h3>Coffee</h3>
         		</div>
-            {{#coffee}}
+            
         		<div class="menus d-flex ftco-animate">
-              <div class="menu-img img" style="background-image: url({{image}});"></div>
+              <div class="menu-img img" style="background-image: url('/images/coffee.jpeg');"></div>
               <div class="text">
               	<div class="d-flex">
 	                <div class="one-half">
-	                  <h3>{{name}}</h3>
+	                  <h3>Coffee</h3>
 	                </div>
 	                <div class="one-forth">
-	                  <span class="price">${{price}}</span>
+	                  <span class="price">$1</span>
 	                </div>
 	              </div>
-	              <p><span>{{description}}</span></p>
+	              <p><span>Taste Our home made Coffee</span></p>
               </div>
             </div>
-            {{/coffee}}
+            
           </div>
 
         	<div class="col-md-6 col-lg-4 menu-wrap">
         		<div class="heading-menu text-center ftco-animate">
         			<h3>Tea</h3>
         		</div>
-            {{#tea}}
+            
         		<div class="menus d-flex ftco-animate">
-              <div class="menu-img img" style="background-image: url({{image}});"></div>
+              <div class="menu-img img" style="background-image: url('/images/tea.jpeg');"></div>
               <div class="text">
               	<div class="d-flex">
 	                <div class="one-half">
-	                  <h3>{{name}}</h3>
+	                  <h3>Tea</h3>
 	                </div>
 	                <div class="one-forth">
-	                  <span class="price">${{price}}</span>
+	                  <span class="price">$1</span>
 	                </div>
 	              </div>
-	              <p><span>{{description}}</span></p>
+	              <p><span>Taste Our Hot Tea</span></p>
               </div>
             </div>
-            {{/tea}}
+            
           </div>
 
         	<div class="col-md-6 col-lg-4 menu-wrap">
@@ -149,87 +149,33 @@
 
     </section>
 
-    <section class="ftco-section testimony-section" style="background-image: url(images/bg_5.jpg);" data-stellar-background-ratio="0.5">
+    <section class="ftco-section testimony-section" style="background-image: url({{{cdn}}}{{page.team.img_background}});" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-          	<span class="subheading">Testimony</span>
-            <h2 class="mb-4">Happy Customer</h2>
+          	<span class="subheading">{{page.team.subheader}}</span>
+            <h2 class="mb-4">{{page.team.header}}</h2>
           </div>
         </div>
         <div class="row ftco-animate justify-content-center">
           <div class="col-md-7">
             <div class="carousel-testimony owl-carousel ftco-owl">
+             {{#page.team.members}}
               <div class="item">
                 <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img mb-4" style="background-image: url({{{cdn}}}{{image}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Arthur Browner</p>
-                    <span class="position">Customer</span>
+                    <p class="mb-4">{{quote}}</p>
+                    <p class="name">{{name}}</p>
+                    <span class="position">{{position}}</span>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Arthur Browner</p>
-                    <span class="position">Customer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Arthur Browner</p>
-                    <span class="position">Customer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_4.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Arthur Browner</p>
-                    <span class="position">Customer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Arthur Browner</p>
-                    <span class="position">Customer</span>
-                  </div>
-                </div>
-              </div>
+             {{/page.team.members}}
             </div>
           </div>
         </div>
@@ -240,11 +186,11 @@
 		<section class="ftco-section ftco-no-pt ftco-no-pb">
 			<div class="container">
 				<div class="row d-flex">
-          <div class="col-md-5 ftco-animate img img-2" style="background-image: url(images/bg_6.jpg);"></div>
+          <div class="col-md-5 ftco-animate img img-2" style="background-image: url({{{cdn}}}{{page.order.img_background}});"></div>
           <div class="col-md-7 ftco-animate makereservation p-4 p-md-5">
           	<div class="heading-section ftco-animate mb-5">
-	          	<span class="subheading">Book a Table</span>
-	            <h2 class="mb-4">Make Reservation</h2>
+	          	<span class="subheading">{{page.order.subheader}}</span>
+	            <h2 class="mb-4">{{page.order.header}}</h2>
 	          </div>
             <form action="/order" method="post">
               <div class="row">
